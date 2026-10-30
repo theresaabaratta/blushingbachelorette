@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eating Out on a Bachelorette Trip | Blushing Bachelorette</title>
+  <meta name="description" content="Brunch, group dinners, private chefs, and reservation tips for bachelorette party groups.">
+  <link rel="canonical" href="https://blushingbachelorette.com/eating-out.html">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Monoton&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+:root {
+  --charcoal: #3b3b3b;
+  --charcoal-dark: #262626;
+  --red: #e12d2d;
+  --red-dark: #b81f1f;
+  --cream: #fdf4ef;
+  --cream-card: #f3f0ea;
+  --ink: #1a1a1a;
+  --muted: #5d5656;
+  /* Swap in your own photo: url('images/hero.jpg') */
+  --hero-img: none;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.75;
+}
+
+.caps, h2, h3, h4, .navbar .nav-link, .btn-red, .btn-line {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .22em;
+}
+
+.display {
+  font-family: 'Monoton', 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: .03em;
+  line-height: 1.2;
+  color: #fff;
+}
+
+a { color: var(--red); }
+a:hover { color: var(--red-dark); }
+
+/* Nav */
+.navbar { background: var(--charcoal-dark); padding: .8rem 0; }
+.navbar-brand { font-family: 'Monoton', sans-serif; color: #fff !important; font-size: 1.35rem; letter-spacing: .05em; }
+.navbar .nav-link { color: #fff; font-size: .72rem; letter-spacing: .18em; padding: .4rem .9rem !important; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: var(--red); }
+.navbar-toggler { border-color: rgba(255,255,255,.4); }
+.navbar-toggler-icon { filter: invert(1); }
+@media (min-width: 992px) {
+  .navbar-nav .nav-item + .nav-item .nav-link { border-left: 1px solid rgba(255,255,255,.35); }
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background:
+    linear-gradient(rgba(38,38,38,.55), rgba(38,38,38,.55)),
+    var(--hero-img),
+    repeating-linear-gradient(135deg, #e12d2d 0 40px, #c92424 40px 80px);
+  background-size: cover;
+  background-position: center;
+}
+.hero .display { font-size: clamp(2.4rem, 7vw, 5.2rem); margin-bottom: 1.2rem; }
+.hero .caps { font-size: clamp(.8rem, 1.6vw, 1rem); max-width: 720px; margin: 0 auto 2rem; }
+
+/* Buttons */
+.btn-red { background: var(--red); color: #fff; border: 2px solid var(--red); border-radius: 0; font-size: .75rem; padding: .85rem 1.8rem; }
+.btn-red:hover { background: var(--red-dark); border-color: var(--red-dark); color: #fff; }
+.btn-line { background: transparent; color: #fff; border: 2px solid #fff; border-radius: 0; font-size: .75rem; padding: .85rem 1.8rem; }
+.btn-line:hover { background: #fff; color: var(--ink); }
+.btn-line.dark { color: var(--ink); border-color: var(--ink); }
+.btn-line.dark:hover { background: var(--ink); color: #fff; }
+
+/* Bands */
+.red-band { background: var(--red); padding: 3rem 0; text-align: center; }
+.red-band .display { font-size: clamp(1.8rem, 5vw, 3.6rem); margin: 0; }
+.red-band p { color: #fff; margin: .8rem auto 0; max-width: 640px; }
+
+.intro { background: var(--cream); padding: 5rem 0; }
+.intro h2 { text-align: center; font-size: clamp(1.1rem, 2.4vw, 1.7rem); margin-bottom: 2.5rem; }
+.intro .caps { max-width: 820px; margin: 0 auto 1.6rem; font-size: clamp(.85rem, 1.5vw, 1.05rem); line-height: 2.1; }
+
+.dark-section { background: var(--charcoal); color: #fff; padding: 5rem 0; }
+.dark-section h2 { color: #fff; text-align: center; font-size: clamp(1.2rem, 2.6vw, 1.9rem); margin-bottom: 3rem; }
+
+/* Itinerary columns */
+.itin {
+  height: 100%;
+  padding: 2.4rem 2rem;
+  background: var(--charcoal-dark);
+  color: #fff;
+}
+.itin.light { background: var(--cream-card); color: var(--ink); }
+.itin h3 { font-size: 1.3rem; margin-bottom: .4rem; }
+.itin .sub { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .18em; font-size: .72rem; opacity: .85; margin-bottom: 1.8rem; }
+.itin h4 { font-size: .75rem; color: var(--red); margin: 1.4rem 0 .5rem; }
+.itin ul { padding-left: 1.1rem; margin: 0; }
+.itin li { font-size: .93rem; margin-bottom: .3rem; }
+
+/* Guide tiles */
+.tile {
+  display: block;
+  height: 100%;
+  padding: 2.6rem 2rem;
+  text-decoration: none;
+  background: var(--charcoal-dark);
+  color: #fff;
+  transition: background .2s;
+}
+.tile.light { background: var(--cream-card); color: var(--ink); }
+.tile:hover { background: var(--red); color: #fff; }
+.tile i { font-size: 1.8rem; color: var(--red); }
+.tile:hover i { color: #fff; }
+.tile h3 { font-size: 1.15rem; margin: 1rem 0 .6rem; }
+.tile .sub { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; line-height: 1.8; margin-bottom: 1.4rem; }
+.tile .more { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; font-size: .7rem; text-decoration: underline; }
+
+/* Resources */
+.resources p { max-width: 820px; margin: 0 auto 1.4rem; color: #eee; letter-spacing: .02em; }
+.resources a { color: #fff; font-weight: 600; text-decoration: underline; text-decoration-color: var(--red); text-underline-offset: 4px; }
+.resources a:hover { color: var(--red); }
+
+/* Inner pages */
+.page-head { background: var(--red); padding: 4.5rem 0 3.5rem; text-align: center; }
+.page-head .display { font-size: clamp(2rem, 5.5vw, 3.8rem); margin-bottom: 1rem; }
+.page-head .caps { color: #fff; font-size: .85rem; max-width: 640px; margin: 0 auto; line-height: 1.9; }
+
+.content { max-width: 780px; margin: 0 auto; padding: 4.5rem 0 2rem; }
+.content h2 { font-size: 1.05rem; margin: 3rem 0 1rem; }
+.content h2:first-child { margin-top: 0; }
+.content h2::after { content: ""; display: block; width: 48px; height: 3px; background: var(--red); margin-top: .7rem; }
+.tip-box { background: var(--charcoal); color: #fff; padding: 1.5rem 1.8rem; margin: 3rem 0 0; border-left: 6px solid var(--red); }
+.tip-box strong { font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: .18em; font-size: .78rem; color: var(--red); margin-right: .4rem; }
+
+.cta { text-align: center; padding: 1rem 0 5rem; }
+
+/* Footer */
+footer { background: var(--charcoal-dark); color: #cfcfcf; padding: 3.5rem 0 2.5rem; font-size: .9rem; }
+footer .brand { font-family: 'Monoton', sans-serif; color: #fff; font-size: 1.6rem; }
+footer .links a { font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; font-size: .68rem; color: #fff; text-decoration: none; margin: 0 .6rem; display: inline-block; }
+footer .links a:hover { color: var(--red); }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Blushing</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="ideas.html">Ideas</a></li>
+          <li class="nav-item"><a class="nav-link" href="where-to-stay.html">Where to Stay</a></li>
+          <li class="nav-item"><a class="nav-link active" href="eating-out.html">Eating Out</a></li>
+          <li class="nav-item"><a class="nav-link" href="when-to-travel.html">When to Travel</a></li>
+          <li class="nav-item"><a class="nav-link" href="budget.html">Budget</a></li>
+          <li class="nav-item"><a class="nav-link" href="planning-timeline.html">Timeline</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="container">
+      <h1 class="display">Eating Out</h1>
+      <p class="caps">Group meals are the backbone of the weekend. Here is how to book them right</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="content">
+      <h2>Brunch</h2>
+      <p>Bottomless or drag brunch is a bachelorette staple. Book a set menu or a private room for groups over eight, and schedule it late enough that everyone actually shows up.</p>
+
+      <h2>The Big Dinner</h2>
+      <p>Pick one standout dinner for the main night and reserve it early. Many restaurants require a prix fixe menu and a deposit for large parties, so confirm the details when you book.</p>
+
+      <h2>Private Chefs</h2>
+      <p>A private chef at the rental is often similar in cost to a nice restaurant and skips the travel, the split check, and the noise. It is also the easiest way to handle dietary needs.</p>
+
+      <h2>Keep It Easy</h2>
+      <p>Stock the rental with breakfast basics, snacks, and water. Plan one casual meal, like tacos or pizza, so the budget has breathing room.</p>
+
+      <div class="tip-box"><strong>Tip</strong> Ask the restaurant to run one card and settle up with a payment app afterward.</div>
+    </div>
+  </main>
+
+  <div class="cta">
+    <a href="index.html#itineraries" class="btn btn-red me-2 mb-2">Sample Itineraries</a>
+    <a href="ideas.html" class="btn btn-line dark mb-2">Party Ideas</a>
+  </div>
+
+  <footer>
+    <div class="container text-center">
+      <div class="brand mb-3">Blushing Bachelorette</div>
+      <p class="mb-4">Bachelorette party itineraries, ideas, and planning basics for any destination.</p>
+      <div class="links mb-4"><a href="index.html">Home</a><a href="ideas.html">Ideas</a><a href="where-to-stay.html">Where to Stay</a><a href="eating-out.html">Eating Out</a><a href="when-to-travel.html">When to Travel</a><a href="budget.html">Budget</a><a href="planning-timeline.html">Timeline</a></div>
+      <p class="mb-0 small">&copy; 2026 Blushing Bachelorette. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
